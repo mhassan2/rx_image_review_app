@@ -1,0 +1,43 @@
+<dashboard script="table_icons_rangemap.js" stylesheet="table_decorations.css">
+
+    <label>RX Images Retrieval (with icons)</label>
+
+    <row>
+        <table id="table1">
+            <title>Click anywhere on row to see image</title>
+            <searchString>
+              
+                source=patients.records 
+              | getimage image_file http://10.211.55.3/icons/
+			  | eval StateBool = 
+              	if (like (rc_wget,"%ERROR%") OR like(rc_wget,"%fail%") , 1, 
+              			   (if(like(wc_get,"%ERROR%") AND like(cached_imaged,"%Y%"),2,
+              			    0) )  )
+              | table Patient_Name,Prescription, image_file,new_image,wget_result, link,StateBool,cached_image
+              | rangemap field=StateBool low=0-0 elevated=1-1 default=severe | fields - StateBool, new_image
+              
+              
+          	 
+          	</searchString>
+ 
+         
+          <!--  <option name="drilldown">none</option>    -->
+           <option name="drilldown">row</option>
+           <drilldown target="_blank">
+              
+              <link>http://localhost:8000/static/app/rx_image_review_app/cache/$row.new_image$</link>
+         
+             
+            <!--   <link>http://localhost:8000/$row.app_shortcut_url$/$row.new_image$</link></link>
+          
+                  <link>https://www.google.com/#safe=off&amp;q=$row.http_loc$</link> -->
+          
+        </drilldown>
+          <option name="wrap">true</option>
+        <option name="rowNumbers">true</option>
+        <option name="dataOverlayMode">none</option>
+        <option name="count">20</option>
+        </table>
+    </row>
+
+</dashboard>

@@ -1,0 +1,11 @@
+Patient_Name, Prescription, image_file
+Mohamad Hassan, A-Methapred (Methylprednisolone Sodium Succinate)- FDA, 	rx_sample1.tif
+Kevin Meeks,	Abacavir Sulfate (Ziagen)- FDA, 				rx_sample2.png
+Sharon Parke, 	Abacavir Sulfate (Ziagen)- Multum, 				rx_sample3.tif
+Kathy Guzman,	Abacavir Sulfate and Lamivudine Tablets (Epzicom)- Multum, 	rx_sample4.jpg
+Sherman Smith, 	Abacavir Sulfate & Lamivudine Zidovudine (Trizivir) FDA, 	rx_sample5.gif
+Grahm Mabon,	Abacavir Lamivudine and Zidovudine (Trizivir)- Multum,  	rx_sample6
+Grahm Mabon,	Abacavir Lamivudine and Zidovudine (Trizivir)- Multum,  	rx_sample7
+John LaMoore, 	Abacavir Dolutegravir and Lamivudine Film-coated Tablets,  	rx_sample8
+Jeffery Blake, 	Abacavir Dolutegravir and Lamivudine Film-coated Tablets,  	bridge
+Jeffery Smith, 	Sectional brain image,  					rx_mri

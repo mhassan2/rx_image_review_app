@@ -1,0 +1,25 @@
+<dashboard>
+  <label>RX Images Retrieval</label>
+  <row>
+    <panel>
+      <table>
+        <search>
+          <query>source=patients.records |getimage image_file http://10.211.55.3/icons/ 
+            |table Patient_Name,Prescription,rc_wget, rc_convert, new_image,file_loc,link,cached_image,image_size,wget_result</query>
+          <earliest>0</earliest>
+          <latest></latest>
+        </search>
+        <option name="drilldown">row</option>
+        <drilldown target="_blank">
+          <link>http://localhost:8000/static/app/walmart/cache/$row.http_loc$</link>
+          <!--    <link>https://www.google.com/#safe=off&amp;q=$row.http_loc$</link>
+          -->
+        </drilldown>
+        <option name="wrap">true</option>
+        <option name="rowNumbers">false</option>
+        <option name="dataOverlayMode">none</option>
+        <option name="count">20</option>
+      </table>
+    </panel>
+  </row>
+</dashboard>

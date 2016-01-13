@@ -1,0 +1,48 @@
+[app/ui]
+version = 6.3.1
+modtime = 1452109077.799318000
+
+[app/launcher]
+version = 6.3.1
+modtime = 1452109077.802863000
+
+[commands/getimage]
+access = read : [ * ], write : [ * ]
+export = system
+owner = nobody
+version = 6.3.1
+modtime = 1451454316.104598000
+
+[views/rx_image_dashboard]
+version = 6.3.1
+modtime = 1451962915.126926000
+
+[views/custom_table_icon_set_rangemap]
+version = 6.3.1
+modtime = 1452110170.746628000
+
+[app/install/install_source_checksum]
+version = 6.3.1
+modtime = 1451919673.629397000
+
+[app/package/check_for_updates]
+version = 6.3.1
+modtime = 1452109077.804674000
+
+[views/rx_images_custom_table_icon_set_rangemap]
+version = 6.3.1
+modtime = 1452541674.008782000
+
+[views/rx_images_dashboard]
+version = 6.3.1
+modtime = 1452576635.688611000
+
+[props/rx_image]
+owner = admin
+version = 6.3.1
+modtime = 1452466297.580885000
+
+[inputs/monitor%3A%2F%2F%2Fopt%2Fsplunk%2Fetc%2Fapps%2Frx_image_review_app%2Fsample_logs%2Fpatients.records]
+owner = admin
+version = 6.3.1
+modtime = 1452466328.857747000
