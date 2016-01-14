@@ -70,41 +70,6 @@ Here is a list of fields injected into the search output:
 
 
 
-
-
-
-
-
-
-
-
-
-Screenshots:
-
-Here is the output from the sample input file (patients.records):
-
- 
-
-
-Here is an example of how the output will look like using getimage command:
-
- 
-
-
-
-
-
-
-
-
-
-
-Using the dashboard (RX Images Retrieval (with icons)
- 
-
-
-As you can see the script added additional field called “link” which is a link to the location of the image on the search head
-
 Script capabilities:
 1.	Can handle images without file name extension.
 2.	Can convert over 100 major image file formats (ImageMagick).
